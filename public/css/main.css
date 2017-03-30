@@ -1,0 +1,61 @@
+html{
+
+}
+
+body{
+
+}
+
+.white{
+	color: white;
+}
+
+.black{
+	color: black;
+}
+
+.right{
+	float: right;	
+}
+
+.left{
+	float: left;
+}
+
+h1{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+.container{
+	min-height:650px;
+	border: 2px solid red;
+}
+
+.text-box{
+	min-height: inherit;
+	width:45%;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.graphics-box{
+	min-height: inherit;
+	width:55%;
+	border: 2px solid black;
+}
+
+#design-text{
+	background-color: #232323;
+}
+
+.parallax-window {
+    min-height: 650px;
+    background: transparent;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
