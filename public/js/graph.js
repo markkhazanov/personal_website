@@ -87,7 +87,6 @@ function generateData(){
 	for (var i=0; i<5; i++){
 		data.push(generatePoint());
 	}
-	console.log(data);
 	return data;
 }
 

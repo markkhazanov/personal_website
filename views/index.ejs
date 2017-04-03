@@ -1,32 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mark Khazanov Website</title>
+<% include partials/header %>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
-
-    <link rel="stylesheet" type='text/css' href="./css/main.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./bower_components/parallax.js/parallax.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
-  </head>
-  <body>
     <div id="root">
       
       <div id="navbar">
@@ -37,8 +10,6 @@
       <div class="container parallax-window white" data-parallax="scroll" data-image-src="./img/me.jpg">
         <h1>I AM MARK KHAZANOV</h1>
       </div>
-
-
 
       <div class="container parallax-window white" id="design" data-parallax="scroll" data-image-src="./img/cpe.jpg">
         <div class="text-box right" id="design-text">
@@ -71,18 +42,17 @@
 
       <div class="container parallax-window" id="contact" data-parallax="scroll" data-image-src="">
         <h1>Contact</h1>
+        <% include partials/contact-form %>
+
       </div>
 
 
     </div>
 
-    <script src="Chart.js"></script>
-    <script>
-        var myChart = new Chart({...})
-    </script>
-    <script src="/js/graph.js"></script>
+  <script src="Chart.js"></script>
+  <script>
+      var myChart = new Chart({...})
+  </script>
+  <script src="/js/graph.js"></script>
     
-
-
-  </body>
-</html>
+<% include partials/footer %>
