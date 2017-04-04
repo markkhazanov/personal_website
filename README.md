@@ -1,7 +1,5 @@
 Tasks left:
 Monday
--404 page
--Email Hookup for Contact
 -Content Intro
 -Styling Intro
 Tuesday

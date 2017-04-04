@@ -23,11 +23,38 @@ body{
 }
 
 h1{
+	font-family: 'Anton', sans-serif;
 	text-align: center;
+	font-size: 7em;
+}
+
+#title-text{
+	margin-top:30%;
+	margin-bottom: 20%;
 }
 
 p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
 }
+
+img{
+	max-width: 500px;
+}
+
+.section{
+	min-height:650px;
+}
+
+#design{
+	background-color: black;
+}
+
+#tech{
+}
+
+
+
 
 .container{
 	min-height:650px;
@@ -37,14 +64,12 @@ p{
 .text-box{
 	min-height: inherit;
 	width:45%;
-	border: 2px solid black;
 	padding: 10px;
 }
 
 .graphics-box{
 	min-height: inherit;
 	width:55%;
-	border: 2px solid black;
 }
 
 #design-text{

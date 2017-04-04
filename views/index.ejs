@@ -1,4 +1,8 @@
 <% include partials/header %>
+    <link rel="stylesheet" type='text/css' href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<body>
 
     <div id="root">
       
@@ -8,17 +12,19 @@
       </div>
 
       <div class="container parallax-window white" data-parallax="scroll" data-image-src="./img/me.jpg">
-        <h1>I AM MARK KHAZANOV</h1>
+        <h1 id="title-text">I AM MARK KHAZANOV</h1>
+        <h2 id="title-text">DESIGN TECHNOLOGY ADVOCACY</h2>
       </div>
 
-      <div class="container parallax-window white" id="design" data-parallax="scroll" data-image-src="./img/cpe.jpg">
+      <div class="section white" id="design">
+        <img class=foo src="../../img/device.jpg" />
         <div class="text-box right" id="design-text">
           <h1 id="white">Design</h1>
           <p id="white">Design</p>
         </div>
       </div>
 
-      <div class="container parallax-window black" id="tech" data-parallax="scroll" data-image-src="">
+      <div class="section black" id="tech">
         <div class="text-box left">
           <h1>Technology</h1>
           <p>I've built a drone navigation system, a heart rate workout synchronizer, and a small electron accelerator.</p>
@@ -28,19 +34,19 @@
         </div>
       </div>
 
-      <div class="container parallax-window white" id="advocacy" data-parallax="scroll" data-image-src="./img/tensegrity2.jpg">
+      <div class="section black" id="advocacy">
         <div class="text-box right">
           <h1>ADVOCACY</h1>
           <p>Most of my time went into breeding these little buddies: Tensegrity Robots</p>
         </div>
       </div>
 
-      <div class="container parallax-window black" id="hobbies" data-parallax="scroll" data-image-src="">
+      <div class="section black" id="hobbies">
         <h1>Passions</h1>
         <p></p>
       </div>
 
-      <div class="container parallax-window" id="contact" data-parallax="scroll" data-image-src="">
+      <div class="section" id="contact">
         <h1>Contact</h1>
         <% include partials/contact-form %>
 
@@ -49,6 +55,12 @@
 
     </div>
 
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    console.log("scroll reveal");
+    window.sr = ScrollReveal();
+    sr.reveal('.foo', {duration: 1700});
+  </script>
   <script src="Chart.js"></script>
   <script>
       var myChart = new Chart({...})
